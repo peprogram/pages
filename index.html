@@ -1,0 +1,547 @@
+<!-- <!DOCTYPE html> -->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NITRR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta descrip -->
+    <!-- <meta http-equiv="Cache-Control" content="no-store" /> -->
+    <script src="https://kit.fontawesome.com/b81d02502d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="pagestyles.css" />
+    <!-- <script src="script.js"></script> -->
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+    <header id="head">
+        <div id="fix" class="wrapper">
+            <div style="margin-bottom: 0px;">
+                <nav class="sub-nav" style="display: grid; grid-template-columns: 1fr 2fr;">
+                    <a href="https://peprogram.github.io/nitrr_redesign/" style="width: max-content;">
+                        <div class="subLogo" style="display: flex; margin: -5px 0;">
+                            <img id="mainlogo" src="assets/images/logo.png"
+                                style="width: 80px; height: 90px; padding-right: 15px;">
+                            <h3 id="name" style="margin: auto; font-size: 115%;">
+                                NATIONAL INSTITUTE OF<br>TECHNOLOGY, RAIPUR<br>
+                                राष्ट्रीय प्रौद्योगिकी संस्थान, रायपुर
+                            </h3>
+                        </div>
+                    </a>
+                    <div id="hb" style="float: right; margin: auto 0; padding-top: 5px;">
+                        <div id="login" style="margin-left: 10px;"><button>LOGIN</button></div>
+                        <div style="background-color: white; position: relative;">
+                            <input class=" search" type="text" placeholder="Search">
+                            <i class="fas fa-search sub-nav-logo" style="color: #00296b; padding: 0 10px;"></i>
+                        </div>
+                        <div style="margin: 0 10px;">
+                            <button id="click" onclick="drop()">Quick Links
+                                <i class="fas fa-plus sub-nav-logo" style="color: #00296b; padding-left: 70px;"></i>
+                            </button>
+                            <div id="menu">
+                                <a href="http://nitrr.ac.in/onlinepay.php">Online Fee Payment</a>
+                                <a href="http://nitrr.ac.in/covid19.php"><b>COVID-19 Notices/Orders</b></a>
+                                <a href="http://nitrr.ac.in/convocation.php">12th Convocation 2021</a>
+                                <a href="http://nitrr.ac.in/donation.php">Appeal for Donation</a>
+                                <a href="http://nitrr.ac.in/convocation.php">How to Apply</a>
+                                <a href="http://nitrr.ac.in/convocation.php">Calender/Notices/Time Table</a>
+                                <a href="http://nitrr.ac.in/convocation.php" style="border: none;">Contact</a>
+                            </div>
+                        </div>
+                        <div style="margin-top: 10px; font-size: 105%;">
+                            For:
+                            <a href="http://nitrr.ac.in/how_to_apply.php">Future students</a> /
+                            <a style="white-space:nowrap">Current students</a> /
+                            <a style="white-space:nowrap">Faculty & Staff</a> /
+                            <a href="http://gecnitrralumni.org/">Alumni</a> /
+                            <a>Parents</a>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="bar" id="smallbar">
+                <span class="dropdown"><a href="https://peprogram.github.io/nitrr_redesign/"
+                        style="text-decoration: none;"><i class="fas fa-home"
+                            style="font-size: 110%; padding: 0 5px;"></i></a></span>
+                <span class="dropdown">
+                    <a>INSTITUTE <i class="fas fa-caret-down"></i></a>
+                    <span class="dropdown-content" style="grid-template-columns: auto auto;">
+                        <div>
+                            <h4>ABOUT</h4>
+                            <a href="http://nitrr.ac.in/genesis.php">Genesis</a>
+                            <a href="http://nitrr.ac.in/aboutus.php">About</a>
+                            <a href="http://nitrr.ac.in/downloads/Vision%202030_24112021.pdf">Vision 2030</a>
+                        </div>
+                        <div>
+                            <h4>ADMINISTRATION</h4>
+                            <a href="http://nitrr.ac.in/bog.php">Board of Governors</a>
+                            <a href="http://nitrr.ac.in/director.php">Director</a>
+                            <a href="http://nitrr.ac.in/deans.php">Deans</a>
+                            <a href="http://nitrr.ac.in/registrar.php">Registrar</a>
+                            <a href="http://nitrr.ac.in/senate.php">Senate</a>
+                            <a href="http://nitrr.ac.in/BAWC.php">Building and Work Committee </a>
+                            <a href="http://nitrr.ac.in/finance.php">Finance Committee</a>
+                            <a href="http://nitrr.ac.in/adminstaff.php">Administrative Staff</a>
+                            <a href="http://nitrr.ac.in/committee.php">Committees</a>
+                        </div>
+                    </span>
+                </span>
+                <span class="dropdown">
+                    <a>ACADEMICS <i class="fas fa-caret-down"></i></a>
+                    <span class="dropdown-content" style="grid-template-columns: auto;">
+                        <div>
+                            <h4>DEPARTMENTS</h4>
+                            <div style="display: grid; grid-template-columns: auto auto; grid-gap: 5px;">
+                                <div>
+                                    <a href="http://nitrr.ac.in/aboutbiomed.php">Bio-Medical Engineering</a>
+                                    <a href="http://nitrr.ac.in/aboutbiotech.php">Bio-Technology</a>
+                                    <a href="http://nitrr.ac.in/aboutchemical.php">Chemical Engineering</a>
+                                    <a href="http://nitrr.ac.in/aboutcivil.php">Civil Engineering</a>
+                                    <a href="http://nitrr.ac.in/aboutcse.php">Computer Science & Engineering</a>
+                                    <a href="http://nitrr.ac.in/aboutelectrical.php">Electrical Engineering</a>
+                                    <a href="http://nitrr.ac.in/aboutelectronics.php">Electronics & Communication
+                                        Engineering</a>
+                                    <a href="http://nitrr.ac.in/aboutit.php">Information Technology</a>
+                                    <a href="http://nitrr.ac.in/aboutmechanical.php">Mechanical Engineering</a>
+                                    <a href="http://nitrr.ac.in/aboutmining.php">Mining Engineering</a>
+                                    <a href="http://nitrr.ac.in/aboutmeta.php"> Metallurgical and Materials
+                                        Engineering</a>
+                                </div>
+                                <div>
+                                    <a href="http://nitrr.ac.in/aboutarchitecture.php">Architecture</a>
+                                    <a href="http://nitrr.ac.in/aboutgeology.php">Applied Geology</a>
+                                    <a href="http://nitrr.ac.in/aboutchemistry.php">Department of Chemistry</a>
+                                    <a href="http://nitrr.ac.in/aboutmath.php">Department of Mathematics</a>
+                                    <a href="http://nitrr.ac.in/aboutenglish.php">Department of Humanities & Social
+                                        Sciences</a>
+                                    <a href="http://nitrr.ac.in/aboutphysics.php">Department of Physics</a>
+                                    <a href="http://nitrr.ac.in/aboutmca.php">Masters in Computer Applications</a>
+                                    <a href="http://nitrr.ac.in/aboutmeta.php">Workshop</a>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </span>
+                <span class="dropdown">
+                    <a>STUDENTS <i class="fas fa-caret-down"></i></a>
+                    <span class="dropdown-content" style="grid-template-columns: auto auto;">
+                        <div>
+                            <h4>CURRENT STUDENTS</h4>
+                            <a href="http://nitrr.ac.in/admission.php">Admission & Fee Structure</a>
+                            <a href="http://nitrr.ac.in/ordinances.php">Ordinances</a>
+                            <a href="http://nitrr.ac.in/acad_downloads.php">Academic Calendar</a>
+                            <a href="http://nitrr.ac.in/exam_notice.php">Notice</a>
+                            <a href="http://nitrr.ac.in/timetable.php">Time Table</a>
+                            <a href="http://nitrr.ac.in/syllabus.php">Syllabus</a>
+                            <a href="http://nitrr.ac.in/results.php">Results</a>
+                            <a href="http://nitrr.ac.in/verification.php">Education Verification Procedure</a>
+                            <a>Student Clubs and Committees</a>
+                        </div>
+                        <div>
+                            <h4>PROSPECTIVE STUDENTS</h4>
+                            <a href="http://nitrr.ac.in/how_to_apply.php">How To Apply</a>
+                        </div>
+                    </span>
+                </span>
+                <span class="dropdown">
+                    <a>RESEARCH <i class="fas fa-caret-down"></i></a>
+                    <span class="dropdown-content">
+                        <div>
+                            <h4>RESEARCH & CONSULTANCY</h4>
+                            <div style="display: grid; grid-template-columns: auto auto auto;">
+                                <div>
+                                    <a href="http://nitrr.ac.in/res_home.php">About</a>
+                                    <a href="http://nitrr.ac.in/res_office.php">Committee Guidelines</a>
+                                    <a href="http://nitrr.ac.in/res_activities.php">Research Activities</a>
+                                    <a href="http://nitrr.ac.in/iprp.php">Intellectual Propery</a>
+                                    <a href="http://nitrr.ac.in/res_guidelines.php">Guidelines and Forms</a>
+                                    <a href="http://nitrr.ac.in/research_support_grant.php">Research Support/Grant</a>
+                                </div>
+                                <div>
+                                    <a href="http://cdc.nitrr.ac.in/">Entrepreneurship Development and
+                                        Innovation Cell</a>
+                                    <a href="http://nitrr.ac.in/res_mous.php">MOUs</a>
+                                    <a href="http://nitrr.ac.in/conference.php">Conference/ Workshops/
+                                        Webinars</a>
+                                    <a href="http://nitrr.ac.in/Best_Researcher_Award.php">Awards</a>
+                                    <a href="http://nitrr.ac.in/Best_Departmental_Appraisal_Award.php"> COGNITION -
+                                        Research Newsletter NIT Raipur</a>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </span>
+                <span class="dropdown">
+                    <a>CAMPUS <i class="fas fa-caret-down"></i></a>
+                    <span class="dropdown-content" style="grid-template-columns: auto auto;">
+                        <div>
+                            <h4>FACILITIES</h4>
+                            <a href="http://nitrr.ac.in/dept-cl.php">Central Library</a>
+                            <a href="http://nitrr.ac.in/hostel.php">Hostels</a>
+                            <a href="http://nitrr.ac.in/dispensary.php">Medical Facilties</a>
+                            <a href="http://nitrr.ac.in/guest_house.php">Guest House</a>
+                            <a>Campus Security</a>
+                            <a>Estate Office</a>
+                            <a>Charges for Common Facilities</a>
+                            <a>Sports</a>
+                            <a>All-in-One Store</a>
+                            <a>Juice Corner & Coffee Day</a>
+                        </div>
+                        <div>
+                            <h4>SERVICES</h4>
+                            <a href="http://nitrr.ac.in/cec_adv.php">Continuing Education Centre</a>
+                            <a href="http://cdc.nitrr.ac.in/">Career Development Centre</a>
+                            <a href="http://ccc.nitrr.ac.in/">Central Computer Centre</a>
+                            <a href="http://tpo.nitrr.ac.in/">Training & Placement Cell</a>
+                        </div>
+                    </span>
+                </span>
+                <span class="dropdown">
+                    <a>RESOURCES <i class="fas fa-caret-down"></i></a>
+                    <span class="dropdown-content" style="grid-template-columns: auto auto;">
+                        <div>
+                            <h4>MEDIA</h4>
+                            <a>NITRR Newsletter - MIRROR</a>
+                            <a>Shilpi</a>
+                            <a>Gallery</a>
+                        </div>
+                        <div>
+                            <h4>OTHER LINKS</h4>
+                            <a>Anti-Ragging System</a>
+                            <a href="http://www.nitrr.ac.in/downloads/ARI-U-0092_16_08_21.pdf">ARIIA 2021 Report</a>
+                            <a>Hindi Font</a>
+                            <a>MOUs</a>
+                            <a href="http://nitrr.ac.in/nirf_data.php">NIRF Data</a>
+                            <a>Year-wise Toppers List</a>
+                            <a>Archives</a>
+                        </div>
+                    </span>
+                </span>
+                <a href="javascript:void(0);" class="icon" onclick="hamburger()"
+                    style="text-decoration: none; font-size: 115%;">MENU<i class="fa fa-bars"
+                        style="padding-left: 10px;"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- END OF HEADER -->
+
+    <!-- MAIN CONTAINER -->
+    <section id="main" class="main-container">
+        <div class="first">
+            <div class="wrapper">
+                <h1>RESEARCH & CONSULTANCY - NIT RAIPUR</h1>
+                <div id="chart" class="">
+                    <a href="#overview">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <p>Overview</p>
+                    </a>
+                    <a href="#office">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <p>Office of the Dean</p>
+                    </a>
+                    <a href="#links">
+                        <i class="fa-solid fa-file-import"></i>
+                        <p>Links</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="overview" class="second">
+            <div class="wrapper">
+                <div style="margin-right: 10px; background-color: var(--white); padding: 10px 20px; ">
+                    <p> NIT Raipur strives its best to position itself at the forefront of cutting-edge research in pace
+                        with global standards. Research activities at NIT Raipur have been growing in all metrics with
+                        respect to the quantity and quality of researchers.</p>
+                    <p>
+                        There are several sponsored projects currently funded by Sponsored Research at NIT Raipur is
+                        mostly
+                        supported by the funding agencies viz. DST, DBT, DeitY, CSIR, CPRI,
+                        MNRE, ICMR, DAE-BRNS, DRDO, Space Application Centre (SAC- ISRO), IRDE, DST-TBD, DST-ICPS, NBHM
+                        DAE,
+                        CCOST, and IEI, various other Ministries of Govt. of India.
+                        The other Govt./non-Govt. organizations, industries and
+                        international funding agencies like Human Settlement Management Institute, Revenue & Disaster
+                        Management Dept., C.G. Govt, PHED, State Council of Education Research & Training Raipur, CECB,
+                        BALCO, NMDC, NSU, RUS/ RFBR, DST (India-Taiwan), NCSU, USA Partnership Program, Royal Academy of
+                        Engineering, UK etc., have also contributed in the sponsored research over the years. In
+                        addition to
+                        this, major consultancy projects with agencies like CPW, PWD, NMDC, BALCO, are
+                        also undertaken across different departments of the Institute.
+                    </p>
+                    <p>In addition to this, the research community of the institute actively engages in translating
+                        novel
+                        ideas to a product/process and has several published patents and granted one patent to its
+                        credit.
+                    </p>
+                    <p>In this spirit, the office of Dean (R&C) has been set up to dedicatedly accelerate the research
+                        activities in the campus. The Office of R&C meticulously works in improvising the interaction of
+                        the
+                        institute with other academic and Industrial agencies through different MoUs. NIT Raipur has
+                        signed
+                        various MOUs with different agencies such as PGCIL, CPRI, NMDC, National Highway Authority of
+                        India
+                        (NHAI), CCOST, MSME, Jayaswal Neco Industries Limited, Raipur Cold Forge, Faridabad Vedanta
+                        Limited
+                        and various foreign universities viz. University of Calabria, Italy, Universidad Autónoma de
+                        Ciudad
+                        Juárez Mexico, Damghan University, Iran, National Ilan University Taiwan, University of Warwick,
+                        UK
+                        etc.. It has also excelled in facilitating the activities of incubating young entrepreneurs
+                        through
+                        Career Development Centre (CDC), guidance to researchers in filing patents through IPR cell.
+                        Apart
+                        from these activities, the Office of Dean (R&C) offers managerial support and guidance to all
+                        research & consultancy activities on the campus and maintains complete records of Sponsored,
+                        Consultancy and Institute Projects, workshops organized, etc.</p>
+                    <p>- Dean (Research and Consultancy)</p>
+                </div>
+                <div>
+                    <img src="assets/pageimages/fig1.png">
+                    <img src="assets/pageimages/fig1.png">
+                    <img src="assets/pageimages/fig1.png">
+                </div>
+            </div>
+        </div>
+        <div id="office" class="third reveal">
+            <h2 style="padding-bottom: 40px; font-size: 190%; margin: auto;">OFFICE OF THE DEAN</h2>
+            <div class="wrapper">
+                <div>
+                    <h3>DEAN</h3>
+                    <img src="assets/pageimages/1.jpg">
+                    <h4><b>Dr. Prabhat Diwan</b><br>Associate Professor<br>Department of Applied Geology</h4>
+                </div>
+                <div>
+                    <h3>ASSOCIATE DEAN</h3>
+                    <img src="assets/pageimages/2.jpg">
+                    <h4><b>Dr. Anamika Yadav</b><br>Associate Professor<br>Department of Electrical Engineering
+                    </h4>
+                </div>
+                <div>
+                    <h3>OFFICE ASSISTANT</h3>
+                    <img src="assets/pageimages/3.jpg">
+                    <h4><b>Mrs. Nidhi Sharma</b><br>Office of Dean (R&C)</h4>
+                </div>
+                <div>
+                    <h3>ACCOUNTANT</h3>
+                    <img src="assets/pageimages/4.jpg">
+                    <h4><b>Mr. Komal Prasad Gayakwada</b><br>Office of Dean (R&C)</h4>
+                </div>
+            </div>
+        </div>
+        <div id="links" class="fourth reveal">
+            <h2 style="padding-bottom: 40px; font-size: 155%;">LINKS</h2>
+            <div class="wrapper">
+                <div class="grid">
+                    <div>
+                        <button class="collapsible">Committee Guidelines</button>
+                        <div class="content">
+                            <a>Institute Ethics Committee</a>
+                            <a>Research Advisory Committee</a>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="collapsible">Research Activities</button>
+                        <div class="content">
+                            <a>Scholarly output from NIT Raipur (2015-2020)</a>
+                            <a>Research Areas</a>
+                            <a>Projects</a>
+                            <a>Summary of Sponsored & Consultancy Projects at NITR Raipur (2015-20)</a>
+                            <a>Journal publications in 2020-2021</a>
+                            <a>Consultancy projects</a>
+                            <a>Students Conference Sponsored by Institute</a>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="collapsible">Guidelines and Forms</button>
+                        <div class="content">
+                            <a>Format for approval of reimbursement for student participation in India</a>
+                            <a>Format for reimbursement approval for student participation abroad</a>
+                            <a>National/International Conference Policy</a>
+                            <a>Research Seed Grant Policy</a>
+                            <a>Closure Report for Seed Grant Project</a>
+                            <a>Revised format of Organizing STTP / Workshop / Training Program.</a>
+                            <a style="display: inline-block;"><b>STTP(SF):</b></a>
+                            <a style="display: inline-block; padding: 10px 2px;">Brochure</a>
+                            <a style="display: inline-block; padding: 10px 2px;">Certificate</a>
+                            <a style="display: inline-block; padding: 10px 2px;">Schedule</a>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="collapsible">Intellectual Property</button>
+                        <div class="content">
+                            <a>Constitution of IPR cell</a>
+                            <a>List of Patents Published - Till Date</a>
+                            <a>Intellectual Property Rights Policy</a>
+                            <a>Intellectual Property Disclosure Form</a>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="collapsible">Best Researcher Award</button>
+                        <div class="content">
+                            <a>Policy for Best Researcher Award NIT Raipur</a>
+                            <a>Best researcher award input sheet_final</a>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="collapsible">Best Departmental Appraisal Award</button>
+                        <div class="content">
+                            <a>Best Departmental Appraisal Award Circular</a>
+                            <a>Best Departmental Appraisal Award Form</a>
+                        </div>
+                    </div>
+                    <div>
+                        <button style="padding: 10px 15px; width: 100%; text-align: left;"
+                            onclick="window.dialog.showModal()">
+                            Conferences, Seminars and Courses</button>
+                        <div class="content">
+                            <dialog>
+                                <span>
+                                    <h3>CONFERENCES, SEMINARS AND COURSES</h3>
+                                    <button onclick="window.dialog.close();"
+                                        style="position: fixed; top:0; right:0; padding: 10px 20px;"><b>CLOSE</b></button>
+                                </span>
+                                <div>
+                                    <a>STTP: Short Term Training Programme on Data Science and Hydrogeological
+                                        Studies
+                                        scheduled from Feb 16-20, 2022 </a>
+                                    <a>1st International Conference on Applied Computational Intelligence and
+                                        Analytics
+                                        (ACIA-2022) during 26-27 Feb,2022. organized by the Department of
+                                        Information
+                                        Technology, NIT, Raipur. (Online Mode) </a>
+                                    <a>1st International Conference On Smart Materials And Applications (SMA-2022)
+                                        during
+                                        March 4-5, 2022. </a>
+                                    <a> INTERNATIONAL CONFERENCE ON RECENT ADVANCES IN WATER RESOURCES, ENVIRONMENT
+                                        AND
+                                        GEOMATICS ENGINEERING (ICRAWEG2022) March 10th-11th, 2022 (Virtual Mode)
+                                        For more details please visit conference website:
+                                        http://icraweg2022.nitrr.ac.in/</a>
+                                    <a> International Conference on Advances in Earth and Environmental Studies
+                                        (AEES-2022)
+                                        during February 25-26, 2022 at NIT Raipur in Virtual mode </a>
+                                    <a> International Conference on Applications of Intelligent Computing in
+                                        Engineering
+                                        and
+                                        Science (AICES 2022)(Dates: Feb 12-13, 2022) </a>
+                                    <a> Fourth International Conference on Machine Intelligence and Signal
+                                        Processing
+                                        (MISP2022),
+                                        organized by the Department of CS&E, National Institute of Technology,
+                                        Raipur,
+                                        India, during March 12-14, 2022(In Virtual Mode) </a>
+                                    <a> Second IEEE International Conference on Power, Control and Computing
+                                        Technologies
+                                        ICPC2T-2022 organized by the Department of Electrical Engineering, National
+                                        Institute of Technology, Raipur and technically co-sponsored by IEEE Bombay
+                                        Section,
+                                        IEEE Industry Applications Society (IAS) and IEEE Student Section NIT Raipur
+                                    </a>
+                                    <a> 1st International Conference on "Computational Intelligence and Network
+                                        Security
+                                        (ICCINS-2022)”
+                                        during 3-4 March 2022 at NIT Raipur </a>
+                                    <a> An International Conference on “Applied Mechanics, Machine Learning and
+                                        Advanced
+                                        Computation” (AMMLAC 2022) during 11th-12th March 2022 at NIT Raipur
+                                        (Conference
+                                        Proceedings to be published in AIP, Scopus and Web of Science Indexed)
+                                        Material TECH2022 (Online Second International Conference on Materials and
+                                        Technologies); 28 -29 January 2022 Visit Website:
+                                        http://materialtech2022.nitrr.ac.in/ </a>
+                                    <a>International Virtual Conference on “Advances in Mechanical Engineering,
+                                        Industrial
+                                        Informatics and Management (AMEIIM-2022)” from 25th-26th Feb 2022.
+                                        1 Brochure 2 Brochure</a>
+                                </div>
+                            </dialog>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="collapsible">MOUs</button>
+                        <div class="content">
+                            <a>Best Departmental Appraisal Award Circular</a>
+                            <a>Best Departmental Appraisal Award Form</a>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="collapsible">Research Support/Grant</button>
+                        <div class="content">
+                            <a>Best Departmental Appraisal Award Circular</a>
+                            <a>Best Departmental Appraisal Award Form</a>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="collapsible">COGNITION - Research Newsletter</button>
+                        <div class="content">
+                            <a><img src="assets/images/research.png" style="width: auto; height: 200px;"></a>
+                        </div>
+                    </div>
+                    <!-- <h2 style="padding-bottom: 40px; font-size: 115%;">COGNITION - The Research Newsletter</h2>
+                    <img src="assets/images/research.png" style="width: auto; height: 200px;"> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF MAIN CONTAINER -->
+
+    <!-- LINKS -->
+    <section class=" link">
+        <ul class="wrapper">
+            <div style="text-align: center; margin-right: 30px; font-size: 105%;">
+                <img src="assets/images/logo.png" style="width: 80px; padding-bottom: 10px;"><br>
+                <b>National Institute of Technology, Raipur</b><br>
+                <!-- <li>राष्ट्रीय प्रौद्योगिकी संस्थान, रायपुर</li> -->
+                G.E. Road, Raipur<br>Chattisgarh, India - 492010<br>
+                <a>+91-771-2254200</a><br>
+                <a>director@nitrr.ac.in</a><br><br>
+                <div class="logos">
+                    <a href="#"><i class="fab fa-facebook-square fa-2x logo"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-2x logo"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-2x logo"></i></a>
+                    <a href="#"><i class="fab fa-youtube fa-2x logo"></i></a>
+                </div>
+            </div>
+            <div>
+                <li><a>NIT Raipur at a Glance</a></li>
+                <li><a>Web OPAC</a></li>
+                <li><a>Annual Reports</a></li>
+                <li><a>Unnat Bharat Abhiyan at NITRR</a></li>
+                <li><a>RTI Act</a></li>
+                <li><a>MOOCs</a></li>
+                <li><a>Pledge Certificate</a></li>
+                <li><a>Terms & Conditions</a></li>
+                <li><a>National Academic Depository (NAD)</a></li>
+                <li><a>Institute Innovation and Start-up Policy</a></li>
+            </div>
+            <div>
+                <li><a>MOUs</a></li>
+                <li><a>TEQIP III</a></li>
+                <li><a>Research Newsletter - NIT Raipur</a></li>
+                <li><a>Institute Alumnus Awards</a></li>
+                <li><a>NIT Raipur Library Discovery</a></li>
+                <li><a>NIT Act, Statues and Office Memorandum</a></li>
+                <li><a>National and Industrial Collaboration cell</a></li>
+                <li><a>SWAYAM Free Online Education</a></li>
+                <li style="list-style: none;"><img src="assets/images/image_76.png" style="height: 40px;"></li>
+        </ul>
+    </section>
+    <!-- END OF LINKS -->
+
+    <!-- FOOTER -->
+    <footer>
+        Copyright © 2018, National Institute of Technology Raipur, All Rights Reserved
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        GSTIN: 22AAAJN0643G1ZN
+    </footer>
+    <script src="pagescript.js"></script>
+</body>
+
+</html>
