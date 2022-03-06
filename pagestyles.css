@@ -270,6 +270,23 @@ dialog a:nth-child(odd) {
 .link {margin-top: 10px;}
 
 
+#goUp {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    outline: 2px outset var(--yellow2); 
+  }
+  
+  #goUp:hover {
+    background-color: var(--blue); 
+    color: var(--white);
+    outline: 2px outset var(--blue2); 
+  }
+
 
 @media(max-width: 560px) {
     

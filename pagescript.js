@@ -1,5 +1,7 @@
 window.onscroll = function() {scrollFunction()};
 
+mybutton = document.getElementById("goUp");
+
 function scrollFunction() {
   if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
     document.getElementById("fix").style.padding = "0";
@@ -20,6 +22,15 @@ function scrollFunction() {
     // document.getElementById("main").style.transition = "none";
     document.getElementById("hb").style.display = "block";
   }
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
 function hamburger() {
